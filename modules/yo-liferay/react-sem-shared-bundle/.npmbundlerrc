@@ -1,0 +1,22 @@
+{
+	"create-jar": {
+		"output-dir": "dist",
+		"features": {
+			"js-extender": true,
+			"web-context": "/react-sem-shared-bundle",
+			"localization": "features/localization/Language",
+			"configuration": "features/configuration.json"
+		}
+	},
+	"dump-report": true,
+	"exclude": {
+		"*": true
+	},
+	"config": {
+		"imports": {
+			"": {
+				"react-yo-shared-bundle": "^1.0.0"
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"name": "react-yo-shared-bundle",
+	"version": "1.0.0",
+	"description": "React Yo Shared Bundle",
+	"devDependencies": {
+		"@babel/cli": "^7.7.5",
+		"@babel/core": "^7.7.5",
+		"@babel/preset-env": "^7.7.6",
+		"@babel/preset-react": "^7.7.4",
+		"liferay-npm-build-support": "^2.32.0",
+		"liferay-npm-bundler": "^2.32.0"
+	},
+	"dependencies": {
+		"dayjs": "^1.11.13",
+		"imask": "^6.6.3",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6"
+	},
+	"scripts": {
+		"build": "babel --source-maps -d build src && npm run copy-assets && liferay-npm-bundler",
+		"copy-assets": "lnbs-copy-assets",
+		"deploy": "npm run build && lnbs-deploy"
+	},
+	"main": "index.js"
+}

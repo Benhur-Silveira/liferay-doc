@@ -1,0 +1,26 @@
+{
+	"create-jar": {
+		"output-dir": "dist",
+		"features": {
+			"js-extender": true,
+			"web-context": "/react-com-shared-bundle",
+			"localization": "features/localization/Language",
+			"configuration": "features/configuration.json"
+		}
+	},
+	"dump-report": true,
+	"exclude":{
+		"*": true
+	},
+	"config": {
+		"imports": {
+			"react-yo-shared-bundle": {
+				"react": "^16.8.6",
+				"react-dom": "^16.8.6"
+			},
+			"": {
+				"react-yo-shared-bundle": "^1.0.0"
+			}
+		}
+	}
+}
