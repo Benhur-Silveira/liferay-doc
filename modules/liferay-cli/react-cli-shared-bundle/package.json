@@ -1,0 +1,16 @@
+{
+  "name": "react-cli-shared-bundle",
+  "version": "1.0.0",
+  "description": "React Cli Shared Bundle",
+  "dependencies": {
+    "@liferay/portal-7.4": "*",
+    "dayjs": "^1.11.13",
+    "imask": "^6.6.3"
+  },
+  "scripts": {
+    "build": "liferay build",
+    "clean": "liferay clean",
+    "deploy": "liferay deploy",
+    "deploy:gradlew": "cd ../../../gradlew :modules:liferay-cli:react-cli-shared-bundle:deploy"
+  }
+}

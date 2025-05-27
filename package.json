@@ -1,0 +1,13 @@
+{
+    "private": true,
+    "workspaces": {
+        "packages": [
+            "modules\\liferay-cli\\react-cli-com-shared-bundle",
+            "modules\\liferay-cli\\react-cli-sem-shared-bundle",
+            "modules\\liferay-cli\\react-cli-shared-bundle",
+            "modules\\yo-liferay\\react-com-shared-bundle",
+            "modules\\yo-liferay\\react-sem-shared-bundle",
+            "modules\\yo-liferay\\react-yo-shared-bundle"
+        ]
+    }
+}
