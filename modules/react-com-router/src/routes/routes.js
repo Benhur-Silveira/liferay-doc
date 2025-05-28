@@ -7,11 +7,16 @@ import {
 import { Home } from "../pages/Home";
 import { About } from "../pages/About";
 
-export const AppRouter = () => {
+export const AppRouter = ({ configuration }) => {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" component={Home} />
+        <Route
+          exact
+          path="/"
+          render={() => <Home configuration={configuration} />}
+        />
+        />
         <Route path="/about" component={About} />
       </Routes>
     </Router>

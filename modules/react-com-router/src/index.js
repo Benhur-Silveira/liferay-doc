@@ -5,7 +5,7 @@ import { AppRouter } from "./routes/routes";
 
 export default function main(params) {
   ReactDOM.render(
-    <AppRouter />,
+    <AppRouter configuration={params.configuration.portletInstance} />,
     document.getElementById(params.portletElementId),
   );
 }

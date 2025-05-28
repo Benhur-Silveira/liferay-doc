@@ -1,6 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import { BTN_HOME } from "../constants/texts";
+import { BTN_HOME } from "../languages/home";
 
 export const About = () => {
   const navigate = useHistory();
