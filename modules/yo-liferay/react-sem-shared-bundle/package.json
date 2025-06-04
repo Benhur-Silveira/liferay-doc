@@ -3,26 +3,29 @@
 	"version": "1.0.0",
 	"description": "React Sem Shared Bundle",
 	"devDependencies": {
-		"liferay-npm-bundler": "^2.32.0",
-		"liferay-npm-build-support": "^2.32.0",
-		"copy-webpack-plugin": "4.6.0",
-		"webpack": "4.29.6",
-		"webpack-cli": "3.3.0",
-		"webpack-dev-server": "3.2.1",
 		"@babel/cli": "^7.7.5",
 		"@babel/core": "^7.7.5",
 		"@babel/preset-env": "^7.7.6",
-		"@babel/preset-react": "^7.7.4"
+		"@babel/preset-react": "^7.7.4",
+		"@testing-library/jest-dom": "^5.16.5",
+		"@testing-library/react": "^9.5.0",
+		"copy-webpack-plugin": "4.6.0",
+		"jsdom": "^16.7.0",
+		"liferay-npm-build-support": "^2.32.0",
+		"liferay-npm-bundler": "^2.32.0",
+		"vite": "^2.9.16",
+		"vitest": "^0.34.6",
+		"webpack": "4.29.6",
+		"webpack-cli": "3.3.0",
+		"webpack-dev-server": "3.2.1"
 	},
-	"dependencies": {
-		"react": "16.8.6",
-		"react-dom": "16.8.6"
-	},
+	"dependencies": {	},
 	"scripts": {
 		"build": "babel --source-maps -d build src && npm run copy-assets && liferay-npm-bundler",
 		"copy-assets": "lnbs-copy-assets",
 		"translate": "lnbs-translate",
 		"deploy": "npm run build && lnbs-deploy",
+		"test": "vitest",
 		"start": "lnbs-start"
 	},
 	"portlet": {

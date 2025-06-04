@@ -1,0 +1,13 @@
+{
+  "config": {
+    "imports": {
+      "react-cli-shared-bundle": {
+        "dayjs": "^1.11.13",
+        "imask": "^6.6.3"
+      },
+      "": {
+        "react-cli-shared-bundle": "^1.0.0"
+      }
+    }
+  }
+}

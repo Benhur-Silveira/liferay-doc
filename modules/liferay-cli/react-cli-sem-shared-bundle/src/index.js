@@ -5,12 +5,7 @@ import { AppComponent } from "./AppComponent";
 
 export default function main(params) {
   ReactDOM.render(
-    <AppComponent
-      portletNamespace={params.portletNamespace}
-      contextPath={params.contextPath}
-      portletElementId={params.portletElementId}
-      configuration={params.configuration}
-    />,
+    <AppComponent />,
     document.getElementById(params.portletElementId),
   );
 }

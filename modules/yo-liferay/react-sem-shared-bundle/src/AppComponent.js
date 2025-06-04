@@ -1,11 +1,12 @@
 import React from "react";
-import { mask } from "react-yo-shared-bundle/utils";
+import { Title } from "./components/Title";
+import { NAME } from "./languages/texts";
 export default class extends React.Component {
   render() {
     return (
-      <div>
-        <h1>{Liferay.Language.get("widget-name")}: React sem shared bundle</h1>
-        <span>{mask({ mask: "cep", value: "12345-678" })}</span>
+      <div className={"d-flex"}>
+        <h1>{NAME}: </h1>
+        <Title title={"React sem shared bundle"} />
       </div>
     );
   }

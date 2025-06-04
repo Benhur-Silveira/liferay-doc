@@ -8,15 +8,6 @@
 			"configuration": "features/configuration.json"
 		}
 	},
-	"dump-report": true,
-	"exclude": {
-		"*": true
-	},
-	"config": {
-		"imports": {
-			"": {
-				"react-yo-shared-bundle": "^1.0.0"
-			}
-		}
-	}
+	"dump-report": true
+
 }

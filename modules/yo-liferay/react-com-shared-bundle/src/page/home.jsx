@@ -1,8 +1,8 @@
 import React from "react";
 import { ButtonUI } from "../shared/ui/button";
-import { mask } from "../shared/utils/mask";
 import { validateEmail, validateCPFCNPJ } from "../shared/utils/validators";
 import { BUTTON_SAVE_TEXT } from "../constants/texts";
+import { TextMask } from "../components/TextMask";
 
 export const Home = () => {
   return (
@@ -14,9 +14,9 @@ export const Home = () => {
       <p>{validateCPFCNPJ("838.079.371-45") ? "true" : "false"}</p>
       <div>
         <h2>Mask</h2>
-        <p>CEP: {mask({ mask: "cep", value: "12345-678" })}</p>
-        <p>CPF: {mask({ mask: "cpf", value: "123.456.789-00" })}</p>
-        <p>CNPJ: {mask({ mask: "cnpj", value: "12.345.678/0001-90" })}</p>
+        <TextMask mask={"cep"} value={"12345678"} title={"CEP"} />
+        <TextMask mask={"cpf"} value={"12345678900"} title={"CPF"} />
+        <TextMask mask={"cnpj"} value={"12345678000190"} title={"CNPJ"} />
       </div>
       <div>
         <ButtonUI

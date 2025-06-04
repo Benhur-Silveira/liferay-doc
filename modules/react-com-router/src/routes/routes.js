@@ -17,7 +17,7 @@ export const AppRouter = ({ configuration }) => {
           render={() => <Home configuration={configuration} />}
         />
         />
-        <Route path="/about" component={About} />
+        <Route path="/about" render={() => <About />} />
       </Routes>
     </Router>
   );

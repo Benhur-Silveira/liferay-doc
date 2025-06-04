@@ -1,9 +1,10 @@
 import React from "react";
+import { Title } from "./components/Title";
 
-export const AppComponent = (props) => {
+export const AppComponent = () => {
   return (
     <div>
-      <h1>Módulo sem shared bundle - LIferay CLI </h1>
+      <Title title={"React Teste"} />
     </div>
   );
 };
